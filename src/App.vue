@@ -2,10 +2,13 @@
 import Body1 from "./components/Body.vue"
 import Footer1 from "./components/Footer.vue"
 import Header1 from "./components/Header.vue"
+  const clickAction=function () {
+    alert(1)
+  }
 </script>
 
 <template>
-  <div class="main">
+  <div class="main" @click="clickAction">
     <Header1/>
     <div class="under">
       <Body1/>
